@@ -115,4 +115,12 @@ def list_search(find_artiste, target):
             return "found him!"
     return "not available"
 
-print(list_search(artiste2, "sean tizzle"))           
+print(list_search(artiste2, "sean tizzle"))  
+
+
+toys3 = ["car", "bag", "doll"]
+print(toys3[0])
+print(toys3[1])
+
+toys3.append("robot")
+print(toys3)

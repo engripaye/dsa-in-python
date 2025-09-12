@@ -117,10 +117,31 @@ def list_search(find_artiste, target):
 
 print(list_search(artiste2, "sean tizzle"))  
 
-
+# LIST OPERATIONS -- a list is like a shelf where put object in a line ["", ""]
 toys3 = ["car", "bag", "doll"]
 print(toys3[0])
 print(toys3[1])
 
 toys3.append("robot")
 print(toys3)
+
+# DICTIONARIES OPERATION -- a dictionary is like a boxes with labels {"": "", "":""}
+toy4 = {"red": "car", "blue":"doll"}
+print(toy4["red"])
+
+toy4["green"] = "ball"
+print(toy4)
+
+# SET --- a set only keeps unique items
+toys_set = {"ball", "doll", "doll"}
+print(toys_set)
+
+toys_set.add("ballon")
+print(toys_set)
+
+# TURPLE --- A turple is like superglued object, you cant move them
+toys_turple = ("car", "lobby", "super man")
+print(toys_turple[1])
+
+toys_turple2 = ("yam", "library", "car")
+print(toys_turple2[0])

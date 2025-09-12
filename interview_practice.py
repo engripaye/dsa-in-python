@@ -68,4 +68,32 @@ def merge_sorted_list(li, l2):
     result.extend(l2[j:]) 
     return result
 
-print(merge_sorted_list([1, 3, 5], [2, 4, 6]))               
+print(merge_sorted_list([1, 3, 5], [2, 4, 6]))     
+
+
+# BALANCE PARENTHESIS - check if brackets are valid
+def is_valid(s):
+    stack = []
+    mapping = {")": "(", "]": "[", "}": "{"}
+    for char in s:
+        if char in mapping:
+            top = stack.pop() if stack else "#"
+            if mapping[char] != top:
+                return False
+        else:
+            stack.append(char) 
+    return not stack
+
+print(is_valid("()[]{}"))
+print(is_valid("(]"))
+
+
+# MAXIMUM SUBARRAY - find the largest sum of a subarray
+def max_subarray(nums):
+    max_sum = curr_sum = nums[0]
+    for num in nums[1:]:
+        curr_sum = max(num, curr_sum + num)
+        max_sum = max(max_sum, curr_sum)
+    return max_sum
+
+print(max_subarray([-2,1,-3,4,-1,2,1,-5,4]))        

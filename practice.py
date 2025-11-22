@@ -145,3 +145,6 @@ print(toys_turple[1])
 
 toys_turple2 = ("yam", "library", "car")
 print(toys_turple2[0])
+
+toys_turple4 = ("yam")
+print(toys_turple4)
